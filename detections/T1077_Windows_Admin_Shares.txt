@@ -13,7 +13,7 @@
 //
 // Tactics: #Lateral Movement
 //
-SysmonOSSEM
+Sysmon
 | where EventID == 3 and process_path contains "net.exe"
 and (process_command_line contains "use"
 or process_command_line contains "session"

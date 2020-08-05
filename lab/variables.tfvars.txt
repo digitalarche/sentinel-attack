@@ -6,7 +6,7 @@ authentication = {
 }
 
 location                      = ""  # eg. westus
-prefix                        = ""  # eg. azure-sentinel-lab
+prefix                        = ""  # eg. azure-sentinel-lab; NOTE: ensure this is identical to the resource group within which Sentinel-ATT&CK has been deployed
 
 tags =  {
     environment = ""                # eg. dev, testing, staging
@@ -16,6 +16,10 @@ accounts = {
     # workstation accounts
     pc1_admin_user          = ""
     pc1_admin_password      = ""
+
+    # DC account
+    dc1_admin_user          = ""
+    dc1_admin_password      = ""
 }
 
 workstations = {
@@ -28,4 +32,5 @@ workstations = {
 
     # Naming configurations
     pc1             = ""            # eg. pc-test
+    dc1             = ""
 }
